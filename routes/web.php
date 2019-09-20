@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+
+Route::get('/usuarios','Usuarioscontroller@index');
+Route::get('/usuarios/{id}','Usuarioscontroller@ver')->where('usuarios','[0-9]+');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
