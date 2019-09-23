@@ -9,12 +9,15 @@
 
 
 	<ul>
-		<?php foreach ($usuarios as $a):?>
+		@forelse ($usuarios as $a)
 
-			<li><?php echo e($a) ?></li>
+			<li>{{$a}}</li>
+
+		@empty 
+			 <p>no  se encuentran  usuarios </p>
 
 
-		<?php endforeach; ?>	
+		@endforelse	
 
 
 	</ul>
