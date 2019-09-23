@@ -12,19 +12,28 @@ class cargoSeeder extends Seeder
      */
     public function run()
     {
-    	
+    	// creando una  insercion desde un modelo 
+        \App\Cargo::create([
 
-        DB::table('cargos')->insert([
+            'nomcargo' =>'desarrollo android',
 
-        	'nomcargo' =>'desarrollo android',
+            'nomcargo' =>'comercial',
+
+
+
+        ]);
+
+       /* DB::table('cargos')->insert([
+
+        	
 
 
         ]);
           DB::table('cargos')->insert([
 
-            'nomcargo' =>'comercial',
+            
 
 
-        ]);
+        ]);*/
     }
 }
