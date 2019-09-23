@@ -20,5 +20,11 @@ class cargoSeeder extends Seeder
 
 
         ]);
+          DB::table('cargos')->insert([
+
+            'nomcargo' =>'comercial',
+
+
+        ]);
     }
 }
