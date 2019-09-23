@@ -23,7 +23,7 @@ Route::get('/usuarios/{id}','Usuarioscontroller@ver')->where('id','[0-9]+');
 
 Route::get('/usuarios/nuevo','Usuarioscontroller@crear');
 
-Route::get('/usuarios/{nombre}/{apodo}','Bienvenidacontroller');
+Route::get('/usuarios/{nombre}/{apodo}','Bienvenidacontroller@nuevo');
 
 Auth::routes();
 
