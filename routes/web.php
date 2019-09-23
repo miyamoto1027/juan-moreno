@@ -18,7 +18,12 @@ Route::get('/', function () {
 
 
 Route::get('/usuarios','Usuarioscontroller@index');
-Route::get('/usuarios/{id}','Usuarioscontroller@ver')->where('usuarios','[0-9]+');
+
+Route::get('/usuarios/{id}','Usuarioscontroller@ver')->where('id','[0-9]+');
+
+Route::get('/usuarios/nuevo','Usuarioscontroller@crear');
+
+Route::get('/usuarios/{nombre}/{apodo}','Bienvenidacontroller');
 
 Auth::routes();
 

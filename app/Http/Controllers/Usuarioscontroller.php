@@ -37,13 +37,14 @@ class Usuarioscontroller extends Controller
 
     public function ver($id)
     {
-    	 return "usuarios con la pagina ".$id;
+    	 return "usuarios con la pagina {$id}";
     }
     public function crear()
     {
     	 return 'hola nuevo usuario';
     }
 
+   
 
 
 

@@ -9,7 +9,7 @@ class Bienvenidacontroller extends Controller
 
 
 
-	public function saludo($nombre,$apodo = null)
+	public function __invoke($nombre,$apodo = null)
 	{
 		if ($apodo) {
 	return 'bienvenido '.$nombre.'y tu  apodo  es :'.$apodo;	
